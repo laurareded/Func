@@ -1,0 +1,38 @@
+### testando a raiz do projeto
+GET http://localhost:5130
+
+### cadastrar funcionario
+POST http://localhost:5130/funcionario/cadastrar  
+Content-Type: application/json
+
+{
+    "funcionarioId": 1,
+    "nome": "Julia Lima",
+    "lojaId": "3878"
+}
+
+### listar funcionarios
+GET http://localhost:5130/funcionario/listar
+
+### deletar funcionario
+DELETE http://localhost:5130/funcionario/deletar/1
+
+### buscar funcionario
+GET http://localhost:5130/funcionario/buscar/30 
+
+### cadastrar loja
+POST http://localhost:5130/loja/cadastrar  
+Content-Type: application/json
+
+{
+    "lojaId": "3878"
+}
+
+### listar lojas
+GET http://localhost:5130/loja/listar
+
+### deletar loja
+DELETE http://localhost:5130/loja/deletar/5558
+
+### buscar loja
+GET http://localhost:5130/loja/buscar/3878
